@@ -2,7 +2,7 @@ h1{
   font-family: fantasy;
   font-size: 35pt;
   background-color: #f9ba95;
-  color: #bc6e49;
+  color: #a84000;
   display: inline-block;
   animation-timing-function: linear;
   animation-name: crazymargin;
@@ -21,25 +21,34 @@ h2{
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
   z-index:1px;
+
 }
 
 h4{
-  font-family: cursive;
-  font-size: 25pt;
   animation-timing-function: cubic-bezier();
-  animation-name: tomx;
-  animation-duration: 3s;
+  animation-name: tom;
+  animation-duration: 4s;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
+  z-index:1px;
+  font-family: fantasy;
+    font-weight: bolder;
+    font-size: 35pt;
+    color: #a84000;
+    border: 5px solid #f29063;
+    background-color:#f9d19f;
+  	border-radius: 30px;
+	width: 1100px;
+  	margin: 5px;
+  	line-height: 70px;
+  	text-align: center;
+
 }
 
 h5{
-  animation-timing-function: cubic-bezier();
-  animation-name: list;
-  animation-duration: 15s;
-  animation-direction: reverse;
-  animation-iteration-count: infinite;
   font-size: 30pt;
+  font-style: bold;
+  font-family: fantasy;
 }
 
 h3{
@@ -50,7 +59,23 @@ h3{
   animation-duration: 3s;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
+  line-height: 0px;
 }
+
+p{
+	font-family: fantasy;
+    font-weight: bolder;
+    font-size: 35pt;
+    color: #ffbb00;
+    border: 5px solid #ffbb00;
+    background-color:#f9ff91;
+  	border-radius: 30px;
+  	margin: 10px;
+  	line-height: 70px;
+  	width: 250px;
+  	text-align: center;
+}
+
 
 ul {
                font-size: 30px;
@@ -74,6 +99,7 @@ ul {
              padding-bottom: 25px;
            }
 
+
 .swing
 {
         -webkit-animation: swing 1s ease;
@@ -81,17 +107,13 @@ ul {
         -webkit-animation-iteration-count: 1;
         animation-iteration-count: infinite;
         animation-timing-function:cubic-bezier();
-        width: 220px;
-        height: 55px;
-        position: absolute;
-        top: 550px;
-        left: 900px;
-        opacity: 45%;
-        font-family: fantasy;
-        font-weight: bolder;
-        font-size: 35pt;
-        background-color: #f9ff91;
-        color: #ffbb00;
+        position: relative;
+        top:-10%;
+    	right:0;
+    	bottom:0;
+    	left:60%;
+        z-index: 2; 
+        margin-bottom: 0px;       
 }
 
 body {
@@ -155,11 +177,11 @@ html {
 
 @keyframes tomx {
   to{
-    margin-right: 5px
+    margin-right: -5px
   }
 
   from{
-    margin-left: 5px;
+    margin-left: -5px;
   }
 
 20% {
@@ -194,8 +216,6 @@ html {
   transform: rotate(5deg);
 }
 }
-
-
 
 #man {
   position: absolute;
@@ -314,6 +334,40 @@ hr {
 	margin-left: 20px;
 }
 
+
+.shake {
+	display:inline-block;
+	height: 250px;
+	width: 250px;
+	border-radius: 50% 50% 50% 50%;
+}
+.shake {
+	display:inline;
+	position:relative;
+	float: left;
+}
+
+@-webkit-keyframes spaceboots {
+	{ -webkit-transform: translate(11px, 8px) rotate(360deg); }
+	10% { -webkit-transform: translate(-6px, -4px) rotate(-4deg); }
+	20% { -webkit-transform: translate(-6px, 12px) rotate(2deg); }
+	30% { -webkit-transform: translate(8px, 4px) rotate(0deg); }
+	40% { -webkit-transform: translate(2px, -6px) rotate(2deg); }
+	50% { -webkit-transform: translate(-2px, 4px) rotate(-5deg); }
+	60% { -webkit-transform: translate(-6px, 2px) rotate(0deg); }
+	70% { -webkit-transform: translate(12px, 2px) rotate(-2deg); }
+	80% { -webkit-transform: translate(-6px, -2px) rotate(2deg); }
+	90% { -webkit-transform: translate(4px, 4px) rotate(-6deg); }
+	100% { -webkit-transform: translate(2px, -8px) rotate(-2deg); }
+}
+.shake:hover,
+.shake:focus {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: .75s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
 
 
 
