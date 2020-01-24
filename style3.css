@@ -106,7 +106,7 @@ body {
 html {
     background: url(mosaic3.jpg);
     background-size: cover;
-    opacity: 30%
+    opacity: 100%
   }
 
 @keyframes crazymargin {
