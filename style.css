@@ -171,7 +171,7 @@ ul {
 html {
     background: url(mosaic.jpg);
     background-size: 100%;
-    opacity: 30%
+    opacity: 100%
   }
 
 @keyframes paragraph {
